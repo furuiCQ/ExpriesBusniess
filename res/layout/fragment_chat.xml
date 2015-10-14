@@ -5,6 +5,11 @@
     android:background="@android:color/white"
     android:orientation="vertical" >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一个页面" />
+
     <com.frain.expriesbusniess.customView.ChatListView
         android:id="@+id/chat_listview"
         android:layout_width="fill_parent"
