@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">企业业务系统</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="welcome">欢迎来到企业业务系统</string>
+</resources>
