@@ -8,7 +8,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="第一个页面" />
+        android:text="第一个页面"
+        android:background="#02a201"/>
 
     <com.frain.expriesbusniess.customView.ChatListView
         android:id="@+id/chat_listview"
