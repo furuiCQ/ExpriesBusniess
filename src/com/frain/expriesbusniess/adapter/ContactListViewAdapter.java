@@ -11,13 +11,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.mobileim.conversation.YWConversation;
+import com.alibaba.mobileim.lib.model.contact.Contact;
 import com.frain.expriesbusniess.R;
 
-public class ChatListViewAdapter extends BaseAdapter {
-	List<YWConversation> DataList;
+public class ContactListViewAdapter  extends BaseAdapter {
+	List<Contact> DataList;
 	Context context;
 
-	public ChatListViewAdapter(Context c, List<YWConversation> list) {
+	public ContactListViewAdapter(Context c, List<Contact> list) {
 		DataList = list;
 		context = c;
 	}
@@ -58,8 +59,9 @@ public class ChatListViewAdapter extends BaseAdapter {
 		}else{
 			holder=(ViewHolder)converView.getTag();
 		}
-		YWConversation conversation=DataList.get(arg0);
-		String ConversationId=conversation.getConversationId();
+		Contact contact=DataList.get(arg0);
+		
+		String ConversationId=contact.getShowName();
 		holder.nameView.setText(ConversationId);
 		return converView;
 	}
